@@ -176,13 +176,13 @@ struct ContentView: View {
                             .font(.headline)
                         
                         HStack {
-                            Text(String(format: "%.3f", self.sensorLogger.accX))
+                            Text(String(format: "%.3f", self.connector.accX))
                                 .multilineTextAlignment(.leading)
                             Spacer()
-                            Text(String(format: "%.3f", self.sensorLogger.accY))
+                            Text(String(format: "%.3f", self.connector.accY))
                                 .multilineTextAlignment(.leading)
                             Spacer()
-                            Text(String(format: "%.3f", self.sensorLogger.accZ))
+                            Text(String(format: "%.3f", self.connector.accZ))
                                 .multilineTextAlignment(.leading)
                             
                         }.padding(.horizontal)
@@ -194,13 +194,13 @@ struct ContentView: View {
                         .font(.headline)
                         
                         HStack {
-                            Text(String(format: "%.3f", self.sensorLogger.gyrX))
+                            Text(String(format: "%.3f", self.connector.gyrX))
                                 .multilineTextAlignment(.leading)
                             Spacer()
-                            Text(String(format: "%.3f", self.sensorLogger.gyrY))
+                            Text(String(format: "%.3f", self.connector.gyrY))
                                 .multilineTextAlignment(.leading)
                             Spacer()
-                            Text(String(format: "%.3f", self.sensorLogger.gyrZ))
+                            Text(String(format: "%.3f", self.connector.gyrZ))
                                 .multilineTextAlignment(.leading)
                         }.padding(.horizontal)
                     }.padding(.horizontal, 25)
