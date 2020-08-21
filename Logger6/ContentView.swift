@@ -110,9 +110,10 @@ struct ContentView: View {
                 
                 
                 VStack{
-                    Text("iPhone").font(.headline)
                     // センサー値を表示
-                    VStack(alignment: .leading) {
+                    VStack() {
+                        Text("iPhone").font(.headline)
+                        
                         VStack(alignment: .leading) {
                             Text("Accelerometer")
                                 .font(.headline)
