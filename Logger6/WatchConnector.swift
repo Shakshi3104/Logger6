@@ -79,9 +79,10 @@ class WatchConnector: NSObject, ObservableObject, WCSessionDelegate {
         let array = dataNoLF.components(separatedBy: ",")
         
         // String to Double
-        let x = Double(array[1])!
-        let y = Double(array[2])!
-        let z = Double(array[3])!
+        // Nil Coalescing Operator
+        let x = Double(array[1]) ?? Double.nan
+        let y = Double(array[2]) ?? Double.nan
+        let z = Double(array[3]) ?? Double.nan
         
         let dataDouble = [x, y, z]
         

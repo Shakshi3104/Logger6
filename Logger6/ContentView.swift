@@ -169,7 +169,7 @@ struct ContentView: View {
                         }.padding(.horizontal, 25)
                             .padding(.vertical, 2)
                     }
-                }.padding(.vertical, 5)
+                }.padding(.vertical, 10)
                 
                 VStack {
                     HStack {
