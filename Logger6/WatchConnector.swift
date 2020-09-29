@@ -12,7 +12,7 @@ import WatchConnectivity
 
 class WatchConnector: NSObject, ObservableObject, WCSessionDelegate {
     
-    let saver = WatchSensorData()
+    var saver = WatchSensorData()
     
     // Sensor values from Apple Watch
     @Published var accX = 0.0
@@ -47,7 +47,7 @@ class WatchConnector: NSObject, ObservableObject, WCSessionDelegate {
         
         DispatchQueue.main.async {
             if let accData = message["ACC_DATA"] as? String {
-                self.saver.logAccelerometerData(line: accData)
+                self.saver.append(line: accData, sensorType: .watchAccelerometer)
                 
                 if accData.count != 0 {
                     // iPhone上で表示する
@@ -59,7 +59,7 @@ class WatchConnector: NSObject, ObservableObject, WCSessionDelegate {
             }
             
             if let gyrData = message["GYR_DATA"] as? String {
-                self.saver.logGyroscopeData(line: gyrData)
+                self.saver.append(line: gyrData, sensorType: .watchGyroscope)
                 
                 if gyrData.count != 0 {
                     let gyrDataDouble = self.stringToDouble(data: gyrData)
@@ -92,26 +92,31 @@ class WatchConnector: NSObject, ObservableObject, WCSessionDelegate {
     
 }
 
-class WatchSensorData {
+
+struct WatchSensorData {
     var accelerometerData: String
     var gyroscopeData: String
     
+    private let column = "time,x,y,z\n"
+    
     public init() {
-        let column = "time,x,y,z\n"
-        self.accelerometerData = column
-        self.gyroscopeData = column
+        self.accelerometerData = self.column
+        self.gyroscopeData = self.column
     }
     
-    func logAccelerometerData(line: String) {
-        self.accelerometerData.append(contentsOf: line)
-    }
-    
-    func logGyroscopeData(line: String) {
-        self.gyroscopeData.append(contentsOf: line)
+    mutating func append(line: String, sensorType: SensorType) {
+        switch sensorType {
+        case .watchAccelerometer:
+            self.accelerometerData.append(line)
+        case .watchGyroscope:
+            self.gyroscopeData.append(line)
+        default:
+            print("No data of \(sensorType) is available.")
+        }
     }
     
     // 保存したファイルパスを取得する
-    func getDataURLs(label: String, subject: String) -> [URL] {
+    mutating func getDataURLs(label: String, subject: String) -> [URL] {
         let format = DateFormatter()
         format.dateFormat = "yyyyMMddHHmmss"
         let time = format.string(from: Date())
@@ -146,9 +151,8 @@ class WatchSensorData {
     }
     
     // データをリセットする
-    func resetData() {
-        let column = "time,x,y,z\n"
-        self.accelerometerData = column
-        self.gyroscopeData = column
+    mutating func resetData() {
+        self.accelerometerData = self.column
+        self.gyroscopeData = self.column
     }
 }
