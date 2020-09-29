@@ -1,4 +1,4 @@
- //
+//
 //  ContentView.swift
 //  Logger6
 //
@@ -19,7 +19,7 @@ struct ContentView: View {
     
     @State private var viewChoise = 0
     
-    @ObservedObject var sensorLogger = PhoneSensorLogManager()
+    @ObservedObject var sensorLogger = PhoneSensorManager()
     
     @ObservedObject var connector = WatchConnector()
     
@@ -53,7 +53,7 @@ struct ContentView: View {
                 }
                 .sheet(isPresented: $isSharePresented, content: {
                         // ActivityViewControllerを表示
-                    ActivityViewController(activityItems: self.sensorLogger.logger.getDataURLs(label: self.label, subject: self.username) + self.connector.saver.getDataURLs(label: self.label, subject: self.username), applicationActivities: nil)
+                    ActivityViewController(activityItems: self.sensorLogger.data.getURLs(label: self.label, subject: self.username) + self.connector.saver.getDataURLs(label: self.label, subject: self.username), applicationActivities: nil)
                     })
                     .alert(isPresented: $isEmptySubjectLabel, content: {
                         Alert(title: Text("保存できません"), message: Text("Subject NameとLabelを入力してください"))
@@ -110,10 +110,12 @@ struct ContentView: View {
                 
                 
                 VStack{
-                    // センサー値を表示
-                    VStack() {
+                    HStack {
+                        Image(systemName: "iphone")
                         Text("iPhone").font(.headline)
-                        
+                    }
+                    // センサー値を表示
+                    VStack(alignment: .leading) {
                         VStack(alignment: .leading) {
                             Text("Accelerometer")
                                 .font(.headline)
@@ -130,7 +132,7 @@ struct ContentView: View {
                                 
                             }.padding(.horizontal)
                         }.padding(.horizontal, 25)
-                            .padding(.vertical, 20)
+                            .padding(.vertical, 2)
                         
                         VStack(alignment: .leading) {
                             Text("Gyroscope")
@@ -147,7 +149,7 @@ struct ContentView: View {
                                     .multilineTextAlignment(.leading)
                             }.padding(.horizontal)
                         }.padding(.horizontal, 25)
-                            .padding(.vertical, 10)
+                            .padding(.vertical, 2)
                         
                         
                         VStack(alignment: .leading) {
@@ -165,12 +167,15 @@ struct ContentView: View {
                                     .multilineTextAlignment(.leading)
                             }.padding(.horizontal)
                         }.padding(.horizontal, 25)
-                            .padding(.vertical, 10)
+                            .padding(.vertical, 2)
                     }
-                }.padding(.vertical, 10)
+                }.padding(.vertical, 5)
                 
                 VStack {
-                    Text("Watch").font(.headline)
+                    HStack {
+                        Image(systemName: "applewatch")
+                        Text("Watch").font(.headline)
+                    }
                     
                     VStack(alignment: .leading) {
                         Text("Accelerometer")
@@ -188,7 +193,7 @@ struct ContentView: View {
                             
                         }.padding(.horizontal)
                     }.padding(.horizontal, 25)
-                        .padding(.vertical, 10)
+                        .padding(.vertical, 2)
                     
                     VStack(alignment: .leading) {
                         Text("Gyroscope")
@@ -205,10 +210,12 @@ struct ContentView: View {
                                 .multilineTextAlignment(.leading)
                         }.padding(.horizontal)
                     }.padding(.horizontal, 25)
-                        .padding(.vertical, 10)
+                        .padding(.vertical, 2)
                     
                 }.padding(.vertical, 10)
             }
+            
+            
             
         }.onTapGesture {
             // タップしたときにキーボードを下げる

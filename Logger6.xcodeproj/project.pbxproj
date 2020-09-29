@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE6C721224EFAA5C00C2717B /* IMG_4235.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE6C721024EFAA5C00C2717B /* IMG_4235.PNG */; };
-		CE6C721324EFAA5C00C2717B /* IMG_4234.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE6C721124EFAA5C00C2717B /* IMG_4234.PNG */; };
+		CE4612AC2521D0CA0088CBC8 /* PhoneSensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4612AB2521D0CA0088CBC8 /* PhoneSensorData.swift */; };
+		CE4612B82521D4850088CBC8 /* SensorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4612B72521D4850088CBC8 /* SensorType.swift */; };
+		CE4612B92521D4850088CBC8 /* SensorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4612B72521D4850088CBC8 /* SensorType.swift */; };
+		CE4612C12521D4F70088CBC8 /* WatchSensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4612BF2521D4F70088CBC8 /* WatchSensorData.swift */; };
+		CE4612EC2521E21B0088CBC8 /* IMG_4301.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE4612EB2521E21B0088CBC8 /* IMG_4301.PNG */; };
+		CE4612ED2521E21B0088CBC8 /* IMG_4301.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE4612EB2521E21B0088CBC8 /* IMG_4301.PNG */; };
+		CE4612F42521E2810088CBC8 /* IMG_4302.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE4612F32521E2810088CBC8 /* IMG_4302.PNG */; };
+		CE4612F52521E2810088CBC8 /* IMG_4302.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE4612F32521E2810088CBC8 /* IMG_4302.PNG */; };
 		CE77029124D696A900794923 /* IMG_4157.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE77028E24D696A900794923 /* IMG_4157.PNG */; };
 		CE77029224D696A900794923 /* IMG_4155.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE77028F24D696A900794923 /* IMG_4155.PNG */; };
 		CE77029324D696A900794923 /* IMG_4156.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE77029024D696A900794923 /* IMG_4156.PNG */; };
+		CE77029524D697D600794923 /* IMG_4158.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CE77029424D697D600794923 /* IMG_4158.PNG */; };
 		CEBA6F3C24D6592D008194F8 /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6F3B24D6592D008194F8 /* WatchConnector.swift */; };
 		CEBA6F3E24D6594A008194F8 /* PhoneConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6F3D24D6594A008194F8 /* PhoneConnector.swift */; };
 		CEEF6F9324D64AB50015ED13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEF6F9224D64AB50015ED13 /* AppDelegate.swift */; };
@@ -36,6 +43,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CEEF6FA624D64AB80015ED13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEF6F8724D64AB50015ED13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEF6F8E24D64AB50015ED13;
+			remoteInfo = Logger6;
+		};
+		CEEF6FB124D64AB80015ED13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEF6F8724D64AB50015ED13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEF6F8E24D64AB50015ED13;
+			remoteInfo = Logger6;
+		};
 		CEEF6FBB24D64AB90015ED13 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEEF6F8724D64AB50015ED13 /* Project object */;
@@ -78,11 +99,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CE6C721024EFAA5C00C2717B /* IMG_4235.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4235.PNG; sourceTree = "<group>"; };
-		CE6C721124EFAA5C00C2717B /* IMG_4234.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4234.PNG; sourceTree = "<group>"; };
+		CE4612AB2521D0CA0088CBC8 /* PhoneSensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSensorData.swift; sourceTree = "<group>"; };
+		CE4612B72521D4850088CBC8 /* SensorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorType.swift; sourceTree = "<group>"; };
+		CE4612BF2521D4F70088CBC8 /* WatchSensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSensorData.swift; sourceTree = "<group>"; };
+		CE4612EB2521E21B0088CBC8 /* IMG_4301.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4301.PNG; sourceTree = "<group>"; };
+		CE4612F32521E2810088CBC8 /* IMG_4302.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4302.PNG; sourceTree = "<group>"; };
 		CE77028E24D696A900794923 /* IMG_4157.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4157.PNG; sourceTree = "<group>"; };
 		CE77028F24D696A900794923 /* IMG_4155.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4155.PNG; sourceTree = "<group>"; };
 		CE77029024D696A900794923 /* IMG_4156.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4156.PNG; sourceTree = "<group>"; };
+		CE77029424D697D600794923 /* IMG_4158.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4158.PNG; sourceTree = "<group>"; };
 		CEBA6F3B24D6592D008194F8 /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
 		CEBA6F3D24D6594A008194F8 /* PhoneConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnector.swift; sourceTree = "<group>"; };
 		CEEF6F8F24D64AB50015ED13 /* Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Logger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +118,8 @@
 		CEEF6F9B24D64AB80015ED13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEEF6F9E24D64AB80015ED13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEEF6FA024D64AB80015ED13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEF6FA524D64AB80015ED13 /* Logger6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Logger6Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEF6FB024D64AB80015ED13 /* Logger6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Logger6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEF6FB924D64AB90015ED13 /* Logger6 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Logger6 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEF6FBF24D64AB90015ED13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		CEEF6FC124D64AB90015ED13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +147,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEEF6FA224D64AB80015ED13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF6FAD24D64AB80015ED13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEEF6FC524D64AB90015ED13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,8 +174,9 @@
 		CE77028D24D6967600794923 /* materials */ = {
 			isa = PBXGroup;
 			children = (
-				CE6C721124EFAA5C00C2717B /* IMG_4234.PNG */,
-				CE6C721024EFAA5C00C2717B /* IMG_4235.PNG */,
+				CE4612F32521E2810088CBC8 /* IMG_4302.PNG */,
+				CE4612EB2521E21B0088CBC8 /* IMG_4301.PNG */,
+				CE77029424D697D600794923 /* IMG_4158.PNG */,
 				CE77028F24D696A900794923 /* IMG_4155.PNG */,
 				CE77029024D696A900794923 /* IMG_4156.PNG */,
 				CE77028E24D696A900794923 /* IMG_4157.PNG */,
@@ -158,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				CEEF6F8F24D64AB50015ED13 /* Logger.app */,
+				CEEF6FA524D64AB80015ED13 /* Logger6Tests.xctest */,
+				CEEF6FB024D64AB80015ED13 /* Logger6UITests.xctest */,
 				CEEF6FB924D64AB90015ED13 /* Logger6 WatchKit App.app */,
 				CEEF6FC824D64AB90015ED13 /* Logger6 WatchKit Extension.appex */,
 			);
@@ -175,7 +219,9 @@
 				CEEF6FA024D64AB80015ED13 /* Info.plist */,
 				CEEF6F9A24D64AB80015ED13 /* Preview Content */,
 				CEEF6FF124D64AF80015ED13 /* PhoneSensorLogger.swift */,
+				CE4612AB2521D0CA0088CBC8 /* PhoneSensorData.swift */,
 				CEBA6F3B24D6592D008194F8 /* WatchConnector.swift */,
+				CE4612B72521D4850088CBC8 /* SensorType.swift */,
 			);
 			path = Logger6;
 			sourceTree = "<group>";
@@ -211,6 +257,7 @@
 				CEEF6FDD24D64ABA0015ED13 /* PushNotificationPayload.apns */,
 				CEEF6FD924D64ABA0015ED13 /* Preview Content */,
 				CEEF6FF324D64E4F0015ED13 /* WatchSensorLogger.swift */,
+				CE4612BF2521D4F70088CBC8 /* WatchSensorData.swift */,
 				CEBA6F3D24D6594A008194F8 /* PhoneConnector.swift */,
 			);
 			path = "Logger6 WatchKit Extension";
@@ -245,6 +292,42 @@
 			productName = Logger6;
 			productReference = CEEF6F8F24D64AB50015ED13 /* Logger.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CEEF6FA424D64AB80015ED13 /* Logger6Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEF6FEB24D64ABA0015ED13 /* Build configuration list for PBXNativeTarget "Logger6Tests" */;
+			buildPhases = (
+				CEEF6FA124D64AB80015ED13 /* Sources */,
+				CEEF6FA224D64AB80015ED13 /* Frameworks */,
+				CEEF6FA324D64AB80015ED13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEF6FA724D64AB80015ED13 /* PBXTargetDependency */,
+			);
+			name = Logger6Tests;
+			productName = Logger6Tests;
+			productReference = CEEF6FA524D64AB80015ED13 /* Logger6Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEEF6FAF24D64AB80015ED13 /* Logger6UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEF6FEE24D64ABA0015ED13 /* Build configuration list for PBXNativeTarget "Logger6UITests" */;
+			buildPhases = (
+				CEEF6FAC24D64AB80015ED13 /* Sources */,
+				CEEF6FAD24D64AB80015ED13 /* Frameworks */,
+				CEEF6FAE24D64AB80015ED13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEF6FB224D64AB80015ED13 /* PBXTargetDependency */,
+			);
+			name = Logger6UITests;
+			productName = Logger6UITests;
+			productReference = CEEF6FB024D64AB80015ED13 /* Logger6UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		CEEF6FB824D64AB90015ED13 /* Logger6 WatchKit App */ = {
 			isa = PBXNativeTarget;
@@ -287,11 +370,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "MacBook Pro";
 				TargetAttributes = {
 					CEEF6F8E24D64AB50015ED13 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					CEEF6FA424D64AB80015ED13 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CEEF6F8E24D64AB50015ED13;
+					};
+					CEEF6FAF24D64AB80015ED13 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = CEEF6F8E24D64AB50015ED13;
 					};
 					CEEF6FB824D64AB90015ED13 = {
 						CreatedOnToolsVersion = 11.6;
@@ -315,6 +406,8 @@
 			projectRoot = "";
 			targets = (
 				CEEF6F8E24D64AB50015ED13 /* Logger6 */,
+				CEEF6FA424D64AB80015ED13 /* Logger6Tests */,
+				CEEF6FAF24D64AB80015ED13 /* Logger6UITests */,
 				CEEF6FB824D64AB90015ED13 /* Logger6 WatchKit App */,
 				CEEF6FC724D64AB90015ED13 /* Logger6 WatchKit Extension */,
 			);
@@ -326,14 +419,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6C721324EFAA5C00C2717B /* IMG_4234.PNG in Resources */,
 				CE77029124D696A900794923 /* IMG_4157.PNG in Resources */,
 				CEEF6F9F24D64AB80015ED13 /* LaunchScreen.storyboard in Resources */,
 				CE77029224D696A900794923 /* IMG_4155.PNG in Resources */,
+				CE4612F42521E2810088CBC8 /* IMG_4302.PNG in Resources */,
+				CE4612EC2521E21B0088CBC8 /* IMG_4301.PNG in Resources */,
+				CE77029524D697D600794923 /* IMG_4158.PNG in Resources */,
 				CE77029324D696A900794923 /* IMG_4156.PNG in Resources */,
-				CE6C721224EFAA5C00C2717B /* IMG_4235.PNG in Resources */,
 				CEEF6F9C24D64AB80015ED13 /* Preview Assets.xcassets in Resources */,
 				CEEF6F9924D64AB80015ED13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF6FA324D64AB80015ED13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF6FAE24D64AB80015ED13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +458,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4612F52521E2810088CBC8 /* IMG_4302.PNG in Resources */,
+				CE4612ED2521E21B0088CBC8 /* IMG_4301.PNG in Resources */,
 				CEEF6FDB24D64ABA0015ED13 /* Preview Assets.xcassets in Resources */,
 				CEEF6FD824D64ABA0015ED13 /* Assets.xcassets in Resources */,
 			);
@@ -363,10 +473,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEF6F9324D64AB50015ED13 /* AppDelegate.swift in Sources */,
+				CE4612B82521D4850088CBC8 /* SensorType.swift in Sources */,
 				CEBA6F3C24D6592D008194F8 /* WatchConnector.swift in Sources */,
 				CEEF6F9524D64AB50015ED13 /* SceneDelegate.swift in Sources */,
 				CEEF6FF224D64AF80015ED13 /* PhoneSensorLogger.swift in Sources */,
+				CE4612AC2521D0CA0088CBC8 /* PhoneSensorData.swift in Sources */,
 				CEEF6F9724D64AB50015ED13 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF6FA124D64AB80015ED13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEF6FAC24D64AB80015ED13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4612C12521D4F70088CBC8 /* WatchSensorData.swift in Sources */,
 				CEEF6FD024D64AB90015ED13 /* HostingController.swift in Sources */,
 				CEEF6FCE24D64AB90015ED13 /* ContentView.swift in Sources */,
 				CEBA6F3E24D6594A008194F8 /* PhoneConnector.swift in Sources */,
@@ -381,12 +508,23 @@
 				CEEF6FD224D64AB90015ED13 /* ExtensionDelegate.swift in Sources */,
 				CEEF6FD624D64AB90015ED13 /* NotificationView.swift in Sources */,
 				CEEF6FF424D64E4F0015ED13 /* WatchSensorLogger.swift in Sources */,
+				CE4612B92521D4850088CBC8 /* SensorType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CEEF6FA724D64AB80015ED13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEF6F8E24D64AB50015ED13 /* Logger6 */;
+			targetProxy = CEEF6FA624D64AB80015ED13 /* PBXContainerItemProxy */;
+		};
+		CEEF6FB224D64AB80015ED13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEF6F8E24D64AB50015ED13 /* Logger6 */;
+			targetProxy = CEEF6FB124D64AB80015ED13 /* PBXContainerItemProxy */;
+		};
 		CEEF6FBC24D64AB90015ED13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CEEF6FB824D64AB90015ED13 /* Logger6 WatchKit App */;
@@ -445,6 +583,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -469,7 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -505,6 +644,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -523,7 +663,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -628,7 +768,7 @@
 				DEVELOPMENT_TEAM = WHBF4Z49B6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Logger6/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,7 +789,7 @@
 				DEVELOPMENT_TEAM = WHBF4Z49B6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Logger6/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -658,6 +798,90 @@
 				PRODUCT_NAME = Logger;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEEF6FEC24D64ABA0015ED13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBF4Z49B6;
+				INFOPLIST_FILE = Logger6Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xer.Logger6Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Logger6.app/Logger6";
+			};
+			name = Debug;
+		};
+		CEEF6FED24D64ABA0015ED13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBF4Z49B6;
+				INFOPLIST_FILE = Logger6Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xer.Logger6Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Logger6.app/Logger6";
+			};
+			name = Release;
+		};
+		CEEF6FEF24D64ABA0015ED13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBF4Z49B6;
+				INFOPLIST_FILE = Logger6UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xer.Logger6UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Logger6;
+			};
+			name = Debug;
+		};
+		CEEF6FF024D64ABA0015ED13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WHBF4Z49B6;
+				INFOPLIST_FILE = Logger6UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xer.Logger6UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Logger6;
 			};
 			name = Release;
 		};
@@ -696,6 +920,24 @@
 			buildConfigurations = (
 				CEEF6FE924D64ABA0015ED13 /* Debug */,
 				CEEF6FEA24D64ABA0015ED13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEF6FEB24D64ABA0015ED13 /* Build configuration list for PBXNativeTarget "Logger6Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF6FEC24D64ABA0015ED13 /* Debug */,
+				CEEF6FED24D64ABA0015ED13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEF6FEE24D64ABA0015ED13 /* Build configuration list for PBXNativeTarget "Logger6UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF6FEF24D64ABA0015ED13 /* Debug */,
+				CEEF6FF024D64ABA0015ED13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
