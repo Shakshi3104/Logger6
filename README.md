@@ -5,7 +5,7 @@ This application can measure acceleraton data, gyroscope data and magnetic data,
 Logger for [iOS](https://github.com/Shakshi3104/Logger5) + [watchOS](https://github.com/Shakshi3104/Logger-Watch)
 
 ### Logger for iOS
-![screen Phone](materials/IMG_4301.PNG)|![screen Phone](materials/IMG_4302.PNG)
+![screen Phone](materials/IMG_4155.PNG)|![screen Phone](materials/IMG_4156.PNG)
 :-:|:-:
 
 ### Logger for watchOS
